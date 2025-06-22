@@ -22,7 +22,7 @@ const BlogListPage = () => {
   const fetchBlogs = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/blogs', {
+      const response = await fetch('http://54.224.230.146:5000/api/blogs', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

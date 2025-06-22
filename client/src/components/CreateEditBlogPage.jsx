@@ -25,7 +25,7 @@ const CreateEditBlogPage = () => {
   const fetchBlog = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const response = await fetch(`http://54.224.230.146:5000/api/blogs/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -87,7 +87,7 @@ const CreateEditBlogPage = () => {
         tags: formData.tags.trim() ? formData.tags.split(',').map(tag => tag.trim()).filter(tag => tag) : []
       };
 
-      const url = isEditing ? `http://localhost:5000/api/blogs/${id}` : 'http://localhost:5000/api/blogs';
+      const url = isEditing ? `http://54.224.230.146:5000/api/blogs/${id}` : 'http://54.224.230.146:5000/api/blogs';
       const method = isEditing ? 'PUT' : 'POST';
 
       const response = await fetch(url, {

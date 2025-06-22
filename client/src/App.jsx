@@ -44,7 +44,7 @@ function App() {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/me', {
+      const response = await fetch('http://54.224.230.146:5000/api/auth/me', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

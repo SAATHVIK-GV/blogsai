@@ -20,7 +20,7 @@ const BlogDetailPage = () => {
   const fetchBlog = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const response = await fetch(`http://54.224.230.146:5000/api/blogs/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -45,7 +45,7 @@ const BlogDetailPage = () => {
   const fetchRelatedBlogs = async (currentBlog) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}/related`, {
+      const response = await fetch(`http://54.224.230.146:5000/api/blogs/${id}/related`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -65,7 +65,7 @@ const BlogDetailPage = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}/like`, {
+      const response = await fetch(`http://54.224.230.146:5000/api/blogs/${id}/like`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -86,7 +86,7 @@ const BlogDetailPage = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const response = await fetch(`http://54.224.230.146:5000/api/blogs/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`

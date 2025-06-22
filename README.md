@@ -1,22 +1,22 @@
-# 🚀 BlogAI - Content Recommendation Engine
+#  BlogAI - Content Recommendation Engine
 
 A full-stack blog platform that recommends articles to readers using AI (OpenAI API) based on their reading history and preferences.
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 - JWT-based user authentication
 - Role-based access control (Reader/Creator)
 - Secure password hashing with bcrypt
 
-### 📝 Blog Management
+###  Blog Management
 - Create, read, update, and delete blog posts
 - Rich text content with tags
 - Author-only CRUD operations
 - Like/unlike functionality
 - Read count tracking
 
-### 🤖 AI-Powered Recommendations
+###  AI-Powered Recommendations
 - OpenAI embeddings for content analysis
 - Personalized recommendations based on:
   - User preferences
@@ -25,13 +25,13 @@ A full-stack blog platform that recommends articles to readers using AI (OpenAI 
 - Multi-factor scoring algorithm
 - Trending content discovery
 
-### 🎨 Modern UI/UX
+###  Modern UI/UX
 - Responsive design with TailwindCSS
 - Beautiful gradients and animations
 - Mobile-first approach
 - Intuitive navigation
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -41,7 +41,7 @@ A full-stack blog platform that recommends articles to readers using AI (OpenAI 
 | **AI** | OpenAI API (text-embedding-ada-002) |
 | **Deployment** | AWS EC2 (backend), AWS S3 + CloudFront (frontend) |
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -92,7 +92,7 @@ The application will be available at:
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:5000
 
-## 🔧 Configuration
+##  Configuration
 
 ### OpenAI API Setup
 1. Sign up at [OpenAI](https://openai.com)
@@ -105,7 +105,7 @@ The application will be available at:
 3. Get your connection string
 4. Add it to your `.env` file
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /api/auth/signup` - User registration
@@ -125,7 +125,7 @@ The application will be available at:
 - `PUT /api/recommendations/preferences` - Update preferences (authenticated)
 - `GET /api/recommendations/trending` - Get trending blogs (public)
 
-## 🚀 Deployment
+##  Deployment
 
 ### Backend Deployment (AWS EC2)
 
@@ -178,7 +178,7 @@ The application will be available at:
    - Point to your S3 bucket
    - Configure custom domain (optional)
 
-## 🧪 Testing
+##  Testing
 
 ### Backend Tests
 ```bash
@@ -192,14 +192,14 @@ cd client
 npm test
 ```
 
-## 📊 AI Tools Used
+##  AI Tools Used
 
 - **OpenAI Embeddings**: text-embedding-ada-002
   - Generates 1536-dimensional vectors for content analysis
   - Used for similarity calculations and recommendations
   - Cost-effective and highly accurate
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -207,27 +207,4 @@ npm test
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/your-repo/issues) page
-2. Create a new issue with detailed information
-3. Contact the development team
-
-## 🎯 Roadmap
-
-- [ ] Real-time notifications
-- [ ] Advanced analytics dashboard
-- [ ] Social sharing features
-- [ ] Comment system
-- [ ] Email newsletters
-- [ ] Mobile app (React Native)
-
----
-
-**Built with ❤️ using modern web technologies and AI** "# Adya" 

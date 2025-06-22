@@ -22,7 +22,7 @@ const DashboardPage = () => {
       const token = localStorage.getItem('token');
       
       // Fetch stats
-      const statsResponse = await fetch('http://localhost:5000/api/blogs/stats', {
+      const statsResponse = await fetch('http://54.224.230.146:5000/api/blogs/stats', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -34,7 +34,7 @@ const DashboardPage = () => {
       }
 
       // Fetch recent blogs
-      const blogsResponse = await fetch('http://localhost:5000/api/blogs?limit=5', {
+      const blogsResponse = await fetch('http://54.224.230.146:5000/api/blogs?limit=5', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -46,7 +46,7 @@ const DashboardPage = () => {
       }
 
       // Fetch recommendations
-      const recResponse = await fetch('http://localhost:5000/api/recommendations', {
+      const recResponse = await fetch('http://54.224.230.146:5000/api/recommendations', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
